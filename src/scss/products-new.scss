@@ -1,0 +1,128 @@
+.products-new {
+    padding: 45px 0 0 0;
+    margin: 0 0 60px 0;
+    position: relative;
+    background: url('@img/jpg/new-bg.jpg') bottom / cover no-repeat;
+    &::before{
+        content: '';
+        background-color: #FFFFFF;
+        height: 45px;
+        position: absolute;
+        right: 0;
+        top: -1px;
+        width: 53.6%;
+        @media (max-width: 767.98px) {
+            display: none;
+        }
+    }
+    // .products-new_slide
+
+    &_slide {
+        @media (max-width: 767.98px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__inner{
+        padding: 55px 0 55px 0;
+    }
+    // .products-new__container
+
+    &__container {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        align-items: start;
+        @media (max-width: 991px) {
+            display: block;
+        }
+    }
+
+    // .products-new__body
+    
+
+    &__body {
+        padding: 0 70px 0 0;
+        @media (max-width: 991px) {
+            padding: 0 30px 0 0;
+        }
+        @media (max-width: 767.98px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+    }
+
+    // .products-new__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 152%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    // .products-new__text
+
+    &__text {
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 60px;
+    }
+
+    // .products-new__link
+
+    &__link {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 230%;
+        letter-spacing: 0.05em;
+        color: #E8AA31;
+        display: inline-flex;
+        align-items: center;
+        img{
+            transform: rotate(-90deg);
+            position: relative;
+            top: 2px;
+            left: 20px;
+        }
+    }
+
+    // .products-new__slider
+
+    &__slider {
+        min-width: 0;
+        @media (min-width: 991px) {
+            padding: 37px 0 0 0;
+        }
+    }
+
+    // .products-new__swiper
+
+    &__swiper {
+    }
+
+    &__dotts{
+        padding: 50px 0 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        .swiper-pagination-bullet{
+            cursor: pointer;
+            height: 3px;
+            width: 18px;
+            transition: all .3s ease;
+            background-color: #FFFFFF;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #E8AA31;
+            position: relative;
+            width: 30px;
+        }
+    }
+}

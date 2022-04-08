@@ -1,0 +1,19 @@
+.main-page-index {
+    padding: 40px;
+    background-color: rgb(29, 8, 48);
+    height: 100vh;
+}
+.title-page-main-index {
+    font-size: 50px;
+    color: white;
+}
+.link-main-page-index {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 30px;
+    letter-spacing: .3;
+    color: rgb(162, 233, 20);
+    &:hover{
+        text-decoration: underline;
+    }
+}
